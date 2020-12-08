@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px;
+  grid-auto-rows: 80px;
+  grid-gap: 10px;
+  background-color: black;
+}
+
+span {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+span:active {
+  opacity: 0.8;
+}
+
+.result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  grid-column: 1/4;
+  font-size: 48px;
+}
+
+.js-reset {
+  background-color: #b3b3bb;
+}
+
+.js-number,
+.js-equals {
+  background-color: #3d3441;
+}
+
+.js-operator {
+  background-color: #ff9a00;
+}
+
+.zero {
+  grid-column: 1/3;
+}
